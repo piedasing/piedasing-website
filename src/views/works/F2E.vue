@@ -1,15 +1,15 @@
 <template lang="pug">
   section#f2e(
-    class="container mx-auto pt-3"
+    class="container mx-auto px-1 pt-3"
   )
     .row
-      .left--side.col-2
+      .left--side.col-12.col-md-2
         Tab(
           :nowTab="nowTab"
           @change-tab="nowTab = $event"
         )
-      .right--side.col-10(
-        class="pl-5"
+      .right--side.col-12.col-md-10(
+        class="pt-5 md:pt-0 md:pl-5"
       )
         template(v-if="nowTab === 'design'")
           iframe(
@@ -70,7 +70,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-#week1 {
-}
+<style lang="scss">
+
 </style>

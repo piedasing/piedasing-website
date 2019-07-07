@@ -8,7 +8,7 @@
       :style="getPic(id)"
     )
     .profile(
-      class="text-left px-5 pt-2"
+      class="w-full block md:w-auto text-left px-1 md:px-5 pt-2"
     )
       | {{ name }}
       br
@@ -101,6 +101,9 @@ export default {
     }
     &.right {
       padding-left: 0;
+      .circle--pic {
+        order: 0;
+      }
     }
   }
 }

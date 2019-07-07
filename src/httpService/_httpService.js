@@ -4,7 +4,7 @@ export default function(params) {
   let baseURL = "";
   if (process.env.NODE_ENV === "production") {
     // baseURL = 'http://59.126.17.211:8082/show_styling/api/public/api/designer'
-    baseURL = " https://my-json-server.typicode.com/piedasing/pieda-site";
+    baseURL = " https://my-json-server.typicode.com/piedasing/piedasing-website";
   } else {
     baseURL = "http://localhost:3000";
   }

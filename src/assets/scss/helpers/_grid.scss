@@ -1,0 +1,40 @@
+$total_col: 12;
+
+$mediaQuery: (
+  sm: '640px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1280px'
+);
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+}
+
+@for $i from 1 through $total_col {
+  $width: 100% / ($total_col / $i);
+
+  .col-#{ $i } {
+    max-width: 100%;
+    flex: 0 0 $width;
+  }
+}
+
+@each $name, $value in $mediaQuery {
+  @media only screen and (min-width: $value) {
+    @for $i from 1 through $total_col {
+      $width: 100% / ($total_col / $i);
+
+      .col-#{ $name }-#{ $i } {
+        max-width: 100%;
+        flex: 0 0 $width;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+};
+
+@mixin flex($j, $a: $j) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+}
+
+@mixin bg($bgSize, $bgImage: '') {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $bgSize;
+  @if $bgImage != '' {
+    background-image: url($bgImage);
+  }
+}

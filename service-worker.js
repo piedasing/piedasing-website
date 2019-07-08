@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.1004120cf6ed16e71e7a5369f5c31716.js"
+  "precache-manifest.6e61682599f14750e89a7af2bd81b086.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "pieda-site"});

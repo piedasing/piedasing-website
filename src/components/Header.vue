@@ -127,4 +127,15 @@ export default {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .header {
+    .navbar {
+      a.logo {
+        img {
+          max-height: 60px;
+        }
+      }
+    }
+  }
+}
 </style>
